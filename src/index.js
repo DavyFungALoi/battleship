@@ -1,8 +1,7 @@
-import {battleshipFactory} from './battleshipFactory/battleshipFactory'
-
+const battleshipFactory = require('./battleshipFactory/battleshipFactory');
 
 console.log("Hello World from your main file!");
-console.log(battleshipFactory())
-
+const cruiser = battleshipFactory('cruiser', 3, false)
+console.log(cruiser.hitStatus)
 
 
